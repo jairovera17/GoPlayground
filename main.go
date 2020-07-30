@@ -3,5 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello there")
+	card := newCard()
+	fmt.Println(card)
+}
+
+func newCard() string {
+	return "Ace of spades"
 }
