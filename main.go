@@ -1,7 +1,14 @@
 package main
 
+import "fmt"
+
+type person struct {
+	firstName string
+	lastName  string
+}
+
 func main() {
-	cards := newDeckFromFile("my_file.txt")
-	cards.shuffle()
-	cards.print()
+	//alex := person{"Alex", "Andreson"}
+	alex := person{firstName: "Alex", lastName: "Andreson"}
+	fmt.Println(alex)
 }
